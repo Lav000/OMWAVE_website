@@ -61,16 +61,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* Remove default style on buttons */
-button,
-input[type="button"],
-input[type="submit"] {
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 0;
-}
-
 /* Reset anchor styles */
 a {
   color: inherit;
@@ -81,4 +71,56 @@ a {
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
+}
+/* Theme */
+header{
+    background-image:url(/asset/fond_connect.png);
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Styles pour les sections */
+#concep{
+  margin-left: 25%;
+}
+
+#fabri{
+  margin-right: 25%;
+}
+
+section {
+  text-align: center;
+  display:inline-block;
+  width: 15rem;
+  padding: 50px;
+  margin-top: 1rem;
+  border: solid black;
+  border-width: 1px;
+}
+
+section h2 {
+  margin-top: 0;
 }
