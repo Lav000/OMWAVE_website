@@ -115,7 +115,7 @@ section {
   text-align: center;
   display:inline-block;
   width: 15rem;
-  padding: 50px;
+  padding: 1rem;
   margin-top: 1rem;
   border: solid black;
   border-width: 1px;
@@ -123,4 +123,8 @@ section {
 
 section h2 {
   margin-top: 0;
+}
+
+footer p{
+  text-align: center;
 }
