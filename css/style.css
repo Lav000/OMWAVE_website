@@ -70,12 +70,19 @@ a {
 /* Theme */
 html{
   font-size: 62.5%;
-  color: rgb(255, 255, 255);
-  background-color: rgb(18, 25, 31);
-  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(255, 255, 255);
+  background-image: url(/asset/inge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+main{
+
+}
 header {
+  color:rgb(255, 255, 255);
+  background-color: rgb(28, 66, 99);
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -95,14 +102,67 @@ header ul li {
   margin-left: 5px;
 }
 
+/* Réglage de la partie haute */
 .top_part{
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid white;
+  backdrop-filter: blur(10px);
 }
 
+.top_part h2{
+  text-align: center;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.top_part h3{
+  margin-left: 40rem;
+}
+
+.top_part p{
+  text-align: justify;
+  margin: 0.2rem 40rem 5rem 40rem;
+}
+
+/* Réglage du corps */
 .middle_part{
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
+  text-align: justify;
+  backdrop-filter: blur(15px);
+  padding-bottom: 50rem;
+
 }
-footer p{
+
+.middle_part h2{
   text-align: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.middle_part h3{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.middle_part p{
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+/* réglage des contours */
+.middleline{
+  margin-top: 7rem;
+}
+
+.pmiddle{
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+}
+
+/* Réglage du footer */
+footer p{
+  border-top: solid 1px white;
+  text-align: center;
+  backdrop-filter: blur(15px);
 }
