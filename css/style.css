@@ -76,12 +76,10 @@ html{
   background-repeat: no-repeat;
 }
 
-main{
 
-}
 header {
   color:rgb(255, 255, 255);
-  background-color: rgb(28, 66, 99);
+  background-color: rgb(37, 122, 153);
   font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -125,12 +123,13 @@ header ul li {
 
 /* Réglage du corps */
 .middle_part{
+  background-color: #ccc;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   text-align: justify;
   backdrop-filter: blur(15px);
-  padding-bottom: 50rem;
+  margin-bottom: 50rem;
 
 }
 
@@ -147,12 +146,13 @@ header ul li {
 }
 
 .middle_part p{
-  margin: 0rem 2rem 0rem 2rem;
+  margin: 0rem 2rem 2rem 2rem;
 }
 
 /* réglage des contours */
 .middleline{
   margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 
 .pmiddle{
