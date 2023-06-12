@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* rest */
 /* V_C-GTP */
-
 /* Box sizing border-box */
 *,
 *::before,
@@ -67,64 +67,42 @@ a {
   text-decoration: none;
 }
 
-/* Add CSS custom properties for easier theming */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-}
 /* Theme */
-header{
-    background-image:url(/asset/fond_connect.png);
-    background-size: cover;
-    background-position: center;
+html{
+  font-size: 62.5%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(18, 25, 31);
+  font-family: 'Open Sans', sans-serif;
 }
 
-img{
-  padding: 1rem;
-}
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid white;
 }
 
-nav ul li {
+header a{
+  margin: 0.3rem;
+}
+
+header ul{
+  margin-right: 1rem;
+}
+
+header ul li {
   display: inline;
-  margin-right: 10px;
+  margin-left: 5px;
 }
 
-nav ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-/* Styles pour les sections */
-#concep{
-  margin-left: 25%;
-}
-
-#fabri{
-  margin-right: 25%;
-}
-
-section {
+.top_part{
   text-align: center;
-  display:inline-block;
-  width: 15rem;
-  padding: 1rem;
-  margin-top: 1rem;
-  border: solid black;
-  border-width: 1px;
 }
 
-section h2 {
-  margin-top: 0;
+.middle_part{
+  display: flex;
+  justify-content: space-between;
 }
-
 footer p{
   text-align: center;
 }
