@@ -106,6 +106,7 @@ header ul li {
 /* Section dépliante de services */
 .objet {
   position: relative;
+  cursor: pointer;
 }
 
 .section-cachee {
