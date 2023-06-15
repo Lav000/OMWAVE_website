@@ -139,16 +139,18 @@ header ul li {
   display: block;
 }
 
+/* section principal */
 main {
-    color: #fff;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
+  color: #000;
+  backdrop-filter: blur(10px);
 }
 
+.title {
+  padding: 5rem 0rem 0rem 0rem;
+}
 h1 {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 h2 {
@@ -157,19 +159,48 @@ h2 {
   margin-bottom: 2rem;
 }
 
-section {
-  margin-bottom: 4rem;
+.img-conception {
+  width: 45%;
+  align-items: center;
+  max-width: 50rem;
+  border: solid 1px rgb(165, 165, 165);
 }
 
+.img-contener {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+section {
+  background-color: #ccc;
+  display: flex;
+  margin-bottom: 20rem;
+}
+
+.div-p1 {
+  border-right: solid 1px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.div-p2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 50%;
+}
 section h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 0rem 7rem 1rem 7rem;
 }
 
 section p {
   text-align: justify;
+  margin: 0rem 7rem 0rem 7rem;
 }
 
+/* reglage footer */
 footer {
   border-top: 1px solid #fff;
   text-align: center;
