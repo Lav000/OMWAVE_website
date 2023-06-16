@@ -103,6 +103,11 @@ header ul li {
   margin-left: 5px;
 }
 
+ul li:hover {
+  color: rgb(39, 51, 163);
+  transition: color 0.5s;
+}
+
 /* Section dépliante de services */
 .objet {
   position: relative;
@@ -110,14 +115,16 @@ header ul li {
 }
 
 .section-cachee {
+  color: #fff;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #727272;
   padding: 1rem;
-  width: 10rem;
+  width: 11rem;
   z-index: 1;
+  margin-bottom: 1rem;
 }
 
 .section-cachee ul li{
@@ -129,6 +136,9 @@ header ul li {
   display: block;
 }
 
+.section-cachee ul li:hover {
+  color: rgb(39, 51, 163);
+}
 
 /* Réglage de la partie haute */
 .top_part{
@@ -177,6 +187,15 @@ header ul li {
   margin: 0rem 2rem 2rem 2rem;
 }
 
+.middle_part p a{
+  font-size: 16px;
+  transition: font-size 0.5s;
+}
+
+.middle_part p a:hover {
+  font-size: 18px;
+  transition: font-size 0.5s;
+}
 /* réglage des contours */
 .middleline{
   margin-top: 5rem;

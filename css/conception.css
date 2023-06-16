@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+/* rest */
 /* V_C-GTP */
 /* Box sizing border-box */
 *,
@@ -67,18 +67,15 @@ a {
   text-decoration: none;
 }
 
-html {
+/* Theme */
+html{
   font-size: 62.5%;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   background-image: url(/asset/inge.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 header {
   color: #fff;
@@ -93,19 +90,22 @@ header {
   z-index: 9999;
 }
 
-header a {
+header a{
   margin: 0.3rem;
-  text-decoration: none;
-  color: #fff;
 }
 
-header ul {
+header ul{
   margin-right: 1rem;
 }
 
 header ul li {
   display: inline;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+
+ul li:hover {
+  color: rgb(39, 51, 163);
+  transition: color 0.5s;
 }
 
 /* Section dépliante de services */
@@ -115,14 +115,16 @@ header ul li {
 }
 
 .section-cachee {
+  color: #fff;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #727272;
+  background-color: #6e6e6e;
   padding: 1rem;
-  width: 10rem;
+  width: 11rem;
   z-index: 1;
+  margin-bottom: 1rem;
 }
 
 .section-cachee ul li{
@@ -134,8 +136,33 @@ header ul li {
   display: block;
 }
 
+.section-cachee ul li:hover {
+  color: rgb(39, 51, 163);
+}
+
+/* Réglage de la partie haute */
+.top_part{
+  font-family: 'Open Sans', sans-serif;
+  backdrop-filter: blur(10px);
+}
+
+.top_part h2{
+  text-align: center;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.top_part h3{
+  margin-left: 40rem;
+}
+
+.top_part p{
+  text-align: justify;
+  padding: 0.2rem 40rem 5rem 40rem;
+}
+
 /* section principal */
 main {
+  font-family: 'Open Sans', sans-serif;
   color: #000;
   backdrop-filter: blur(10px);
 }
@@ -162,8 +189,11 @@ main {
 }
 
 .top-part {
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
   border-bottom: solid 1px #fff;
-
+  border-top: solid 1px #fff;
+  padding-top: 10rem;
 }
 
 .top-part h2 {
