@@ -111,6 +111,7 @@ header ul li {
 /* Section dépliante de services */
 .objet {
   position: relative;
+  cursor: pointer;
 }
 
 .section-cachee {
@@ -124,15 +125,9 @@ header ul li {
   z-index: 1;
 }
 
-.section-cachee ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.section-cachee ul li {
-  margin: 0;
-  padding: 0;
+.section-cachee ul li{
+  margin: 0rem;
+  padding: 0rem;
 }
 
 .objet:hover .section-cachee {
@@ -145,64 +140,77 @@ main {
   backdrop-filter: blur(10px);
 }
 
-.title {
+.title-part h1 {
   padding: 5rem 0rem 0rem 0rem;
-}
-h1 {
-  font-size: 3rem;
   text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
+.title-part {
   text-align: center;
-  margin-bottom: 2rem;
+}
+.title-part p {
+  margin-top: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
 }
 
-.img-conception {
-  width: 45%;
-  align-items: center;
-  max-width: 50rem;
+.title-part img {
+  margin: 3rem 0rem 5rem 0rem;
+  width: 35%;
   border: solid 1px rgb(165, 165, 165);
 }
 
-.img-contener {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
+.top-part {
+  border-bottom: solid 1px #fff;
+
 }
 
-section {
+.top-part h2 {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.top-part p {
+  margin-left: 5%;
+  margin-right: 10%;
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 4rem;  
+}
+
+.middle-part {
   background-color: #ccc;
   display: flex;
-  margin-bottom: 20rem;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+  justify-content: center;
 }
 
-.div-p1 {
-  border-right: solid 1px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  width: 50%;
+.block1 {
+  flex-basis: calc(30% - 10px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 10rem;
 }
 
-.div-p2 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  width: 50%;
-}
-section h3 {
-  font-size: 2rem;
-  margin: 0rem 7rem 1rem 7rem;
+.block2 {
+  flex-basis: calc(30% - 10px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 10rem;
 }
 
-section p {
+.centerblock {
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.block1 p, .block2 p {
   text-align: justify;
-  margin: 0rem 7rem 0rem 7rem;
 }
 
 /* reglage footer */
 footer {
-  
   border-top: 1px solid #fff;
   text-align: center;
   padding: 1rem;
@@ -213,3 +221,47 @@ footer p {
   color: #fff;
   font-size: 1.4rem;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .title-part img {
+    width: 70%;
+  }
+
+  .middle-part {
+    padding-top: 5rem;
+  }
+
+  .block1,
+  .block2 {
+    flex-basis: 100%;
+  }
+
+  .centerblock {
+    border: none;
+  }
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  .title-part img {
+    width: 50%;
+  }
+
+  .middle-part {
+    padding-top: 8rem;
+  }
+
+  .block1,
+  .block2 {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
