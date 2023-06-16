@@ -194,3 +194,51 @@ footer p{
   text-align: center;
   backdrop-filter: blur(15px);
 }
+
+/* Add a CSS media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header ul {
+    margin-right: 0;
+  }
+
+  header ul li {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .section-cachee {
+    top: auto;
+    bottom: 100%;
+    left: -1rem;
+    width: auto;
+  }
+
+  .middle_part {
+    flex-direction: column;
+  }
+
+  .pmiddle {
+    border: none;
+  }
+
+  footer p {
+    padding: 1rem;
+  }
+}
