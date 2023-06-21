@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* rest */
+/* V_C-GTP */
+/* Box sizing border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+/* Remove default padding */
+body,
+ol,
+ul {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Set default font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Set a more appropriate default for hr element */
+hr {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Remove default outline on focused elements */
+:focus {
+  outline: none;
+}
+
+/* Remove default border-radius for input type="number" in Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Reset anchor styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Theme */
+html{
+  font-size: 62.5%;
+  background-color: rgb(255, 255, 255);
+  background-image: url(/asset/inge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  color: #fff;
+  background-color: #257a99;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+
+header a{
+  margin: 0.3rem;
+}
+
+header ul{
+  margin-right: 1rem;
+}
+
+header ul li {
+  display: inline;
+  margin-left: 5px;
+}
+
+ul li:hover {
+  color: rgb(39, 51, 163);
+  transition: color 0.5s;
+}
+
+/* Section dépliante de services */
+.objet {
+  position: relative;
+  cursor: pointer;
+}
+
+.section-cachee {
+  color: #fff;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #727272;
+  padding: 1rem;
+  width: 11rem;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.section-cachee ul li{
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.objet:hover .section-cachee {
+  display: block;
+}
+
+.section-cachee ul li:hover {
+  color: rgb(39, 51, 163);
+}
+
+/* Theme */
+main {
+  backdrop-filter: blur(15px);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top_section {
+  padding: 10rem 20% 10rem 20%;
+  font-size: 18px;
+}
+
+.top_section img {
+  margin: 5rem auto 5rem auto;
+  display: block;
+  width: 50%;
+  border: solid 1px rgb(165, 165, 165);
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+h4 {
+  padding-bottom: 0.7rem;
+}
+
+.mid_section {
+    background-color: #ccc;
+    display: flex;
+    padding-bottom: 0.7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+
+.mid_section p, h4 {
+    text-align: justify;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#p-mid {
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+  }
+
+.partenaire-confiance {
+    color: #000000;
+    text-align: center;
+    padding: 8rem 20% 8rem 20%;
+    font-size: 18px;
+}
+
+.partenaire-confiance p {
+    text-align: justify;
+}
+
+/* reglage footer */
+footer {
+  border-top: 1px solid #fff;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.4rem;
+}
