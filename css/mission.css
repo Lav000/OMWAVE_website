@@ -146,14 +146,14 @@ main {
 }
 
 .top_section {
-  padding: 10rem 20% 10rem 20%;
+  padding: 8rem 20% 10rem 20%;
   font-size: 18px;
 }
 
 .top_section img {
-  margin: 5rem auto 5rem auto;
+  margin: 5rem auto 0rem auto;
   display: block;
-  width: 60%;
+  width: 40%;
   border: solid 1px rgb(165, 165, 165);
 }
 
@@ -167,29 +167,33 @@ h4 {
 }
 
 .mid_section {
-  background-color: #ccc;
-  display: flex;
-  padding-bottom: 0.7rem;
-  text-align: justify;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+    background-color: #ccc;
+    display: flex;
+    padding-bottom: 0.7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .mid_section p, h4 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+    text-align: justify;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 #p-mid {
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
-}
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+  }
 
 .partenaire-confiance {
-  color: #000000;
-  text-align: center;
-  padding: 8rem 20% 8rem 20%;
-  font-size: 18px;
+    color: #000000;
+    text-align: center;
+    padding: 8rem 20% 8rem 20%;
+    font-size: 18px;
+}
+
+.partenaire-confiance p {
+    text-align: justify;
 }
 
 /* reglage footer */
