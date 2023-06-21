@@ -76,7 +76,6 @@ html{
   background-repeat: no-repeat;
 }
 
-
 header {
   color: #fff;
   background-color: #257a99;
@@ -207,12 +206,19 @@ ul li:hover {
   border-left: solid 1px rgb(0, 0, 0);
 }
 
-/* Réglage du footer */
-footer p{
-  border-top: solid 1px white;
+/* reglage footer */
+footer {
+  border-top: 1px solid #fff;
   text-align: center;
-  backdrop-filter: blur(15px);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+footer p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
 
 /* Add a CSS media query for smaller screens */
 @media only screen and (max-width: 768px) {
