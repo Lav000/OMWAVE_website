@@ -187,13 +187,8 @@ h4 {
 
 .partenaire-confiance {
     color: #000000;
-    text-align: center;
-    padding: 8rem 20% 8rem 20%;
-    font-size: 18px;
-}
-
-.partenaire-confiance p {
-    text-align: justify;
+    padding: 8rem 20% 8rem 10%;
+    font-size: 23px;
 }
 
 /* reglage footer */

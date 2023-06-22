@@ -143,6 +143,8 @@ ul li:hover {
 .top_part{
   font-family: 'Open Sans', sans-serif;
   backdrop-filter: blur(10px);
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 
 .top_part h2{
