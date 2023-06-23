@@ -71,7 +71,7 @@ a {
 html{
   font-size: 62.5%;
   background-color: rgb(255, 255, 255);
-  background-image: url(/asset/inge.png);
+  background-image: url("../asset/inge.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
