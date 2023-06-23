@@ -197,6 +197,12 @@ ul li:hover {
   font-size: 18px;
   transition: font-size 0.5s;
 }
+
+.middle_part p a:hover {
+  color: rgb(39, 51, 163);
+  transition: color 1.3s;
+}
+
 /* réglage des contours */
 .middleline{
   margin-top: 5rem;
