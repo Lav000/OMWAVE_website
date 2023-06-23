@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
     <head>
-        <meta charset="UTF_8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="omwave">
-        <link rel="stylesheet" href="#">
-        <title>OMVAWE</title>
+        <link rel="stylesheet" href="./css/contact.css">
+        <title>OMWAVE</title>
     </head>
     <body>
         <header>
-            <a href="/index.html">
-                <img src="./asset/logo-omwaveconnect.png" alt="omwave" loading="OMWAVE Connect" href="./index.html">
+            <a href="/omwave_website/index.html">
+            <img src="./asset/logo-omwaveconnect.png" alt="OMWAVE Logo" loading="lazy">
             </a>
+            <p>
+                CONCEVOIR ET PRODUIRE EN FRANCE DES PRODUITS CONNECTÉS
+            </p>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Accueil</a></li>
-                    <li><a href="/skills.html">Domaines de compétence</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/omwave_website/index.html">Accueil</a></li>
+                    <li class="objet">
+                        Services
+                        <div class="section-cachee">
+                            <ul>
+                                <li class="hiddenlist"><a href="/omwave_website/conception.html">Conception</a></li>
+                                <li class="hiddenlist"><a href="/omwave_website/solution.html">Solution</a></li>
+                                <li class="hiddenlist"><a href="/omwave_website/fabrication.html">Fabrication</a></li>                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/omwave_website/mission.html">Mission</a></li>
+                    <li><a href="/omwave_website/skills.html">Compétences</a></li>
+                    <li><a href="#">Nos Sites</a></li>
+                    <li><a href="/omwave_website/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>
+            <h2>
                 Contactez nous
-            </h1>            
-            <section>
-                <h2>
-                    OMWAVE CONNECTE MONTROUGE                    
-                </h2>
-                <p>
-                    5 rue Barbès
-                    92120 Montrouge PARIS
-                    +33 (0) 176 710 941 
-                    contact@omwave.com
-                </p>
-            </section>
-            <section>
-                <h2>
-                    TOULOUSE                    
-                </h2>
-                <p>
-                    TOULOUSE
-                    4 Impasse de l’Hers ZAC Des violettes
-                    31240 L’UNION
-                    Développement intelligence électronique
-                </p>
-            </section>
+            </h2>            
+            <p>Nous serions ravis d'avoir de vos nouvelles. N'hésitez pas à nous contacter pour toute demande d'information supplémentaire ou pour discuter de votre projet d'IoT. Remplissez simplement le formulaire ci-dessous ou utilisez l'une des autres méthodes de contact indiquées.</p>
+            <h3>Formulaire de contact</h3>
+            <fieldset id="formulaire">
+                <legend>
+                    Connectez-vous à l'avenir avec OMWAVE
+                </legend>
+                <form action="contact.html" method="post">
+                    <label for="user-lastname">
+                        Nom :
+                    </label>
+                    <input
+                        type="text"
+                        id="user-lastname"
+                        name="nom"
+                        autofocus
+                        placeholder="Nom"
+                        aria-required="true"
+                        required
+                    ><br><br>
+                    <label for="user-name">
+                        Prénom :
+                    </label>
+                    <input
+                    type="text"
+                    id="user-name"
+                    name="Prénom"
+                    placeholder="Prénom"
+                    aria-required="true"
+                    required
+                    >
+                    <label for="company">
+                        Entreprise :
+                    </label>
+                    <input
+                    type="text"
+                    id="company"
+                    name="Entreprise"
+                    placeholder="Entreprise"
+                    aria-required="false"
+                    ><br><br>
+                    <label for="mail">
+                        Votre mail :
+                    </label>
+                    <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    placeholder="e-mail"
+                    aria-required="true"
+                    required
+                    ><br><br>
+                    <label for="phone">
+                        Téléphone :
+                    </label>
+                    <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(+33)"
+                    aria-required="false"
+                    ><br><br>
+                    <label for="message">
+                        Message :
+                    </label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" maxlength="999">coucou...</textarea><br>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </fieldset>
         </main>
