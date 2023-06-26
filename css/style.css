@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 /* rest */
 /* V_C-GTP */
 /* Box sizing border-box */
@@ -69,14 +70,20 @@ a {
 
 /* Theme */
 html{
-  font-size: 62.5%;
   background-color: rgb(255, 255, 255);
   background-image: url("../asset/inge.png");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  backdrop-filter: blur(10px);
 }
 
 header {
+  font-size: 100%;
   color: #fff;
   background-color: #257a99;
   font-family: 'Open Sans', sans-serif;
@@ -90,16 +97,16 @@ header {
 }
 
 header a{
-  margin: 0.3rem;
+  margin: 0.2%;
 }
 
 header ul{
-  margin-right: 1rem;
+  margin-right: 1%;
 }
 
 header ul li {
   display: inline;
-  margin-left: 5px;
+  margin-left: 2%;
 }
 
 ul li:hover {
@@ -120,15 +127,15 @@ ul li:hover {
   top: 100%;
   left: 0;
   background-color: #727272;
-  padding: 1rem;
-  width: 11rem;
+  padding: 1%;
+  width: 170%;
   z-index: 1;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-.section-cachee ul li{
-  margin: 0rem;
-  padding: 0rem;
+.section-cachee ul{
+  margin: 5% 0% 5% 0%;
 }
 
 .objet:hover .section-cachee {
@@ -141,10 +148,9 @@ ul li:hover {
 
 /* Réglage de la partie haute */
 .top_part{
-  font-family: 'Open Sans', sans-serif;
-  backdrop-filter: blur(10px);
-  padding-bottom: 10rem;
-  padding-top: 10rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2%;
+  margin-top: 5%;
 }
 
 .top_part h2{
@@ -153,12 +159,13 @@ ul li:hover {
 }
 
 .top_part h3{
-  margin-left: 40rem;
+  margin-top: 2%;
+  margin-left: 25%;
 }
 
 .top_part p{
   text-align: justify;
-  padding: 0.2rem 40rem 5rem 40rem;
+  margin: 0.5% 25% 5% 25%;
 }
 
 /* Réglage du corps */
@@ -169,19 +176,18 @@ ul li:hover {
   justify-content: space-between;
   text-align: justify;
   backdrop-filter: blur(15px);
-  margin-bottom: 50rem;
+  margin-bottom: 50%;
 }
 
 .middle_part h2{
   text-align: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-bottom: 2rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
 }
 
 .middle_part h3{
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin: 0rem 4rem 1rem 4rem
 }
 
 .middle_part p{
@@ -193,20 +199,20 @@ ul li:hover {
   transition: font-size 0.5s;
 }
 
-.middle_part p a:hover {
+.middle_part a:hover {
   font-size: 18px;
   transition: font-size 0.5s;
 }
 
-.middle_part p a:hover {
+.middle_part a:hover {
   color: rgb(39, 51, 163);
   transition: color 1.3s;
 }
 
 /* réglage des contours */
 .middleline{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .pmiddle{
