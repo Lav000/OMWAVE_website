@@ -68,20 +68,7 @@ a {
   text-decoration: none;
 }
 
-/* Theme */
-html{
-  background-color: rgb(255, 255, 255);
-  background-image: url("../asset/inge.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-body {
-  backdrop-filter: blur(10px);
-}
-
+/* TOP MENU */
 header {
   font-size: 100%;
   color: #fff;
@@ -96,11 +83,11 @@ header {
   z-index: 9999;
 }
 
-header a{
+header a {
   margin: 0.2%;
 }
 
-header ul{
+header ul {
   margin-right: 1%;
 }
 
@@ -114,7 +101,7 @@ ul li:hover {
   transition: color 0.5s;
 }
 
-/* Section dépliante de services */
+/* HIDEN SECTION */
 .objet {
   position: relative;
   cursor: pointer;
@@ -134,7 +121,7 @@ ul li:hover {
   text-align: center;
 }
 
-.section-cachee ul{
+.section-cachee ul {
   margin: 5% 0% 5% 0%;
 }
 
@@ -146,81 +133,88 @@ ul li:hover {
   color: rgb(39, 51, 163);
 }
 
-/* Réglage de la partie haute */
-.top_part{
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 2%;
-  margin-top: 5%;
-}
-
-.top_part h2{
-  text-align: center;
-  padding: 5rem 2rem 2rem 2rem;
-}
-
-.top_part h3{
-  margin-top: 2%;
-  margin-left: 25%;
-}
-
-.top_part p{
-  text-align: justify;
-  margin: 0.5% 25% 5% 25%;
-}
-
-/* Réglage du corps */
-.middle_part{
-  background-color: #ccc;
+/* 3 MAIN PART */
+.main-part {
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  justify-content: space-between;
-  text-align: justify;
-  backdrop-filter: blur(15px);
-  margin-bottom: 50%;
+  color: #fff;
 }
 
-.middle_part h2{
-  text-align: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 5%;
+.main-part::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Hauteur de l'ombre */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 70%); /* Dégradé d'ombre */
+  z-index: 1;
 }
 
-.middle_part h3{
-  margin: 0rem 4rem 1rem 4rem
+.main-part h2,
+.main-part h3 {
+  position: relative;
+  z-index: 2; /* Définir un z-index positif pour les titres */
 }
 
-.middle_part p{
-  margin: 0rem 2rem 2rem 2rem;
+.main-part div {
+  height: 90vh;
 }
 
-.middle_part p a{
-  font-size: 16px;
-  transition: font-size 0.5s;
+#conception,
+#solution,
+#fabrication {
+  width: 35%;
 }
 
-.middle_part a:hover {
-  font-size: 18px;
-  transition: font-size 0.5s;
+/* COLOR DIV */
+#conception {
+  background-color: #ffc107c4;
 }
 
-.middle_part a:hover {
-  color: rgb(39, 51, 163);
-  transition: color 1.3s;
+#solution {
+  background-color: #2195f3cc;
 }
 
-/* réglage des contours */
-.middleline{
-  margin-top: 2%;
-  margin-bottom: 2%;
+#fabrication {
+  background-color: #4caf4fcc;
 }
 
-.pmiddle{
-  border-right: solid 1px rgb(0, 0, 0);
-  border-left: solid 1px rgb(0, 0, 0);
+/* IMG CENTER */
+#conception img,
+#solution img,
+#fabrication img {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 20vh;
+  padding-bottom: 2.5vh;
 }
 
-/* reglage footer */
+/* TXT STYLE & POSITION */
+h2, h3 {
+  margin-left: 3vw;
+}
+
+h2 {
+  font-size: clamp(27px, 2vw, 1000px);
+  transition: font-size 1s;
+}
+
+h3 {
+  font-size: clamp(20px, 1vw, 1000px);
+  transition: font-size 1s;
+}
+
+/* HOVER */
+.hover-effect:hover h2,
+.hover-effect:hover h3 {
+  font-size: 2.9em;
+  transition: font-size 1s;
+}
+
+/* FOOTER */
 footer {
   border-top: 1px solid #fff;
   text-align: center;

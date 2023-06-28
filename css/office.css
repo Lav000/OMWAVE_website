@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 /* rest */
 /* V_C-GTP */
 /* Box sizing border-box */
@@ -68,15 +69,21 @@ a {
 }
 
 /* Theme */
-html{
-  font-size: 62.5%;
+html {
   background-color: rgb(255, 255, 255);
   background-image: url("../asset/inge.png");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  backdrop-filter: blur(10px);
 }
 
 header {
+  font-size: 100%;
   color: #fff;
   background-color: #257a99;
   font-family: 'Open Sans', sans-serif;
@@ -89,17 +96,17 @@ header {
   z-index: 9999;
 }
 
-header a{
-  margin: 0.3rem;
+header a {
+  margin: 0.2%;
 }
 
-header ul{
-  margin-right: 1rem;
+header ul {
+  margin-right: 1%;
 }
 
 header ul li {
   display: inline;
-  margin-left: 5px;
+  margin-left: 2%;
 }
 
 ul li:hover {
@@ -120,17 +127,69 @@ ul li:hover {
   top: 100%;
   left: 0;
   background-color: #727272;
-  padding: 1rem;
-  width: 11rem;
+  padding: 1%;
+  width: 170%;
   z-index: 1;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-.section-cachee ul li{
-  margin: 0rem;
-  padding: 0rem;
+.section-cachee ul {
+  margin: 5% 0% 5% 0%;
 }
 
 .objet:hover .section-cachee {
   display: block;
+}
+
+.section-cachee ul li:hover {
+  color: rgb(39, 51, 163);
+}
+
+/* MAIN */
+img {
+  display: flex;
+  width: 100%;
+}
+
+.intro {
+  padding: 1em;
+  border-bottom: solid 1px #fff;
+}
+
+section {
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section div {
+  flex-basis: 40%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+section p {
+  margin-bottom: 1em;
+}
+
+section h3 {
+  margin-bottom: 5px;
+}
+
+.outro {
+  margin: 5em;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #fff;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.4rem;
 }
