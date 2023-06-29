@@ -17,9 +17,10 @@
                 CONCEVOIR ET PRODUIRE EN FRANCE DES PRODUITS CONNECTÉS
             </p>
             <nav>
-                <ul>
+                <p class="arrow">&equiv;</p>
+                <ul class="hidden">
                     <li><a href="/omwave_website/index.html">Accueil</a></li>
-                    <li class="objet">
+            <!--/*  <li class="objet">
                         Services
                         <div class="section-cachee">
                             <ul>
@@ -28,7 +29,7 @@
                                 <li class="hiddenlist"><a href="/omwave_website/fabrication.html">Fabrication</a></li>                                
                             </ul>
                         </div>
-                    </li>
+                    </li>*/ -->
                     <li><a href="/omwave_website/mission.html">Mission</a></li>
                     <li><a href="/omwave_website/skills.html">Compétences</a></li>
                     <li><a href="/omwave_website/office.html">Nos Sites</a></li>
@@ -40,8 +41,8 @@
             <section class="main-part">
                 <div id="conception">
                     <a href="conception.html">
-                        <img src="./asset/conception.png">
-                        <div class="txt hover-effect">
+                        <div class="hover-effect">
+                            <img src="./asset/conception.png" href="conception.html">
                             <h2>Conception</h2>
                             <h3>Professionnel Service</h3>                            
                         </div>
@@ -49,14 +50,18 @@
                 </div>
                 <div id="solution">
                     <a href="./solution.html">
-                        <h2>Solution</h2>
-                        <h3>Solutions personnalisées</h3>
+                        <div class="hover-effect">
+                            <h2>Solution</h2>
+                            <h3>Solutions personnalisées</h3>
+                        </div>
                     </a>
                 </div>
                 <div id="fabrication">
                     <a href="./fabrication.html">
-                        <h2>Fabrication</h2>
-                        <h3>ReMade in France</h3>
+                        <div class="hover-effect">
+                            <h2>Fabrication</h2>
+                            <h3>ReMade in France</h3>
+                        </div>
                     </a>
                 </div>
             </section>
@@ -66,5 +71,21 @@
                 &copy; - OMWAVE - De l'idée à la production en France. - <time datetime="2023-06-07">2023</time>
             </p>
         </footer>
+        <script>
+            // Sélection de l'élément avec la classe "arrow"
+            const arrowElement = document.querySelector('.arrow');
+
+            // Sélection de la section avec la classe "hidden"
+            const hiddenSection = document.querySelector('.hidden');
+
+            // Ajout d'un gestionnaire d'événements pour le clic sur l'élément "arrow"
+            arrowElement.addEventListener('click', function() {
+            // Vérification de l'état actuel de la section "hidden"
+            const isHidden = hiddenSection.style.display === 'none';
+
+            // Modification de la propriété "display" de la section "hidden"
+            hiddenSection.style.display = isHidden ? 'block' : 'none';
+            });
+        </script>
     </body>
 </html>
