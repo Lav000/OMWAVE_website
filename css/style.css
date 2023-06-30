@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap');
+
+
 /* rest */
-/* V_C-GTP */
 /* Box sizing border-box */
 *,
 *::before,
@@ -69,6 +70,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+/* END RESET */
+
+
 
 /* TOP MENU */
 header {
@@ -105,37 +109,8 @@ ul li:hover {
 li:hover ul {
   display: block;
 }
+
 /* HIDEN SECTION */
-/* .objet {
-  position: relative;
-  cursor: pointer;
-}
-
-.section-cachee {
-  color: #fff;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #727272;
-  padding: 1%;
-  width: 170%;
-  z-index: 1;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.section-cachee ul {
-  margin: 5% 0% 5% 0%;
-}
-
-.objet:hover .section-cachee {
-  display: block;
-}
-
-.section-cachee ul li:hover {
-  color: rgb(39, 51, 163);
-}  */
 .hidden {
   color: #000;
   display: none;
@@ -159,37 +134,39 @@ ul {
   padding: 0vw 2vw 0vw 1vw;
   cursor: pointer;
 }
+/* END TOP-MENU */
 
 
-/* 3 MAIN PART */
-.main-part {
+
+/* SELECTION-PART */
+.selection-part {
   font-family: 'Martian Mono', monospace;
   display: flex;
   color: #fff;
 }
 
-.main-part {
+.selection-part {
   position: relative;
   background: linear-gradient(to top, rgb(0, 0, 0), transparent 90%); /* Dégradé d'ombre */
 }
 
-.main-part h2,
-.main-part h3 {
+.selection-part h2,
+.selection-part h3 {
   position: absolute;
   z-index: 2;
 }
 
-.main-part h2 {
+.selection-part h2 {
   margin-left: 1vw;
   bottom: 8vw;
 }
 
-.main-part h3 {
+.selection-part h3 {
   margin-left: 1vw;
   bottom: 6.5vw;
 }
 
-.main-part div {
+.selection-part div {
   height: 92vh;
 }
 
@@ -226,7 +203,7 @@ ul {
 }
 
 /* TXT STYLE & POSITION */
-h2, h3 {
+.selection-part h2, .selection-part h3 {
   margin-left: 3vw;
 }
 
@@ -257,12 +234,84 @@ h3 {
   transform: scale(1.15);
   transition: transform 1.5s;
 }
+/* END SELECTION-PART */
+
+
+
+/* MISSION PART */
+
+/* INTRO */
+.mission {
+  font-family: 'Martian Mono', monospace;
+}
+
+.intro {
+  display: flex;
+  background-color: #9900ffd3;
+  padding: 5.5vw 30vw 6vw 20vw;
+}
+
+.img-size {
+  width: 55%;
+}
+
+.display {
+  padding-left: 1vw;
+}
+
+.display p {
+  padding-top: 1vw;
+  text-align: justify;
+  font-size: 1.2vw;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* MISSION DETAIL */
+.mission-detail {
+  background-color: #ccc;
+  display: flex;
+  padding-bottom: 0.7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.mission-detail p, h4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.mission-detail h4 {
+  font-size: clamp(20px, 1.2vw, 1000px);
+  padding-bottom: 1vw;
+  text-align: center;
+}
+
+.mission-detail p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(20px, 0.8vw, 1000px);
+  text-align: justify;
+}
+
+#middle-p {
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+
+/* slogant 2 */
+.slog2 h4{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(20px, 2vw, 1000px);
+  padding: 2vw 1vw 2vw 3vw;
+}
+
+/* END MISSION PART */
+
 
 /* FOOTER */
 footer {
   border-top: 1px solid #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1vw;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -270,7 +319,6 @@ footer p {
   color: #fff;
   font-size: 1.4rem;
 }
-
 
 /* Add a CSS media query for smaller screens */
 @media only screen and (max-width: 768px) {
