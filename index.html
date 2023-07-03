@@ -20,9 +20,9 @@
                 <p class="arrow">&equiv;</p>
                 <ul class="hidden">
                     <li><a href="/omwave_website/index.html">Accueil</a></li>
-                    <li><a href="/omwave_website/mission.html">Mission</a></li>
-                    <li><a href="/omwave_website/skills.html">Compétences</a></li>
-                    <li><a href="/omwave_website/office.html">Nos Sites</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#offices">Nos Sites</a></li>
                     <li><a href="/omwave_website/contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -57,7 +57,7 @@
                     </a>
                 </div>
             </section>
-            <section class="mission">
+            <section class="mission" id="mission">
                 <div class="mission-intro">
                     <img class="img-size" src="./asset/imgmission.png">
                     <div class="display">
@@ -123,7 +123,7 @@
                     </h4>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <a href="#top" id="scroll-to-top">&#x2BC5;</a>
                 <h3>
                     Les Compétences d'OMWAVE
@@ -191,7 +191,7 @@
                     </a>
                 </section>
             </section>
-            <section class="offices">
+            <section class="offices" id="offices">
                 <a href="#top" id="scroll-to-top">&#x2BC5;</a>
                 <div class="offices-intro">
                     <p>
@@ -201,7 +201,7 @@
                     </p>
                 </div>
                 <section class="offices-list">
-                    <img src="/asset/carte.png" alt="">
+                    <img src="./asset/carte.png" alt="">
                     <div class="display">
                         <h3>
                             Nos sites
@@ -249,20 +249,31 @@
             </p>
         </footer>
         <script>
-            // Sélection de l'élément avec la classe "arrow"
-            const arrowElement = document.querySelector('.arrow');
-
-            // Sélection de la section avec la classe "hidden"
-            const hiddenSection = document.querySelector('.hidden');
-
-            // Ajout d'un gestionnaire d'événements pour le clic sur l'élément "arrow"
-            arrowElement.addEventListener('click', function () {
-                // Vérification de l'état actuel de la section "hidden"
-                const isHidden = hiddenSection.style.display === 'none';
-
-                // Modification de la propriété "display" de la section "hidden"
-                hiddenSection.style.display = isHidden ? 'block' : 'none';
+          // Sélection de l'élément avec la classe "arrow"
+          const arrowElement = document.querySelector('.arrow');
+        
+          // Sélection de la section avec la classe "hidden"
+          const hiddenSection = document.querySelector('.hidden');
+        
+          // Sélection de tous les liens dans la section
+          const links = hiddenSection.querySelectorAll('a');
+        
+          // Ajout d'un gestionnaire d'événements pour le clic sur l'élément "arrow"
+          arrowElement.addEventListener('click', function () {
+            // Vérification de l'état actuel de la section "hidden"
+            const isHidden = hiddenSection.style.display === 'none';
+        
+            // Modification de la propriété "display" de la section "hidden"
+            hiddenSection.style.display = isHidden ? 'block' : 'none';
+          });
+        
+          // Ajout d'un gestionnaire d'événements pour le clic sur les liens
+          links.forEach(function (link) {
+            link.addEventListener('click', function () {
+              // Masquer la section "hidden" lorsqu'un lien est cliqué
+              hiddenSection.style.display = 'none';
             });
+          });
         </script>
     </body>
 </html>
