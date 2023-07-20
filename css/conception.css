@@ -183,6 +183,44 @@ ul {
 }
 /* END CONCEPTION PART */
 
+/* PROFESSIONNAL SERVICE PART */
+
+
+/* CONTENT */
+.professionnal-service h2 {
+  font-family: 'Martian Mono', monospace;
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+
+.content {
+  background-color: #ccc;
+  display: flex;
+  padding-bottom: 0.7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content p, .content h3 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.content h3 {
+  font-size: clamp(19px, 1.3vw, 1000px);
+}
+
+.content p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(20px, 0.8vw, 1000px);
+  text-align: justify;
+}
+
+#middle-p {
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+/* END PROFESIONNAL SERVICE PART */
 
 
 @media (max-width: 768px) {
