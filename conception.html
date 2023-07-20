@@ -11,44 +11,34 @@
     <body>
         <header>
             <a href="/omwave_website/index.html">
-            <img src="./asset/logo-omwaveconnect.png" alt="OMWAVE Logo" loading="lazy">
+                <img src="./asset/logo-omwaveconnect.png" alt="OMWAVE Logo" loading="lazy">
             </a>
             <p>
                 CONCEVOIR ET PRODUIRE EN FRANCE DES PRODUITS CONNECTÉS
             </p>
             <nav>
-                <ul>
+                <p class="arrow">&equiv;</p>
+                <ul class="hidden">
                     <li><a href="/omwave_website/index.html">Accueil</a></li>
-                    <li class="objet">
-                        Services
-                        <div class="section-cachee">
-                            <ul>
-                                <li class="hiddenlist"><a href="/omwave_website/conception.html">Conception</a></li>
-                                <li class="hiddenlist"><a href="/omwave_website/solution.html">Solution</a></li>
-                                <li class="hiddenlist"><a href="/omwave_website/fabrication.html">Fabrication</a></li>                                
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="/omwave_website/mission.html">Mission</a></li>
-                    <li><a href="/omwave_website/skills.html">Compétences</a></li>
-                    <li><a href="/omwave_website/office.html">Nos Sites</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#offices">Nos Sites</a></li>
                     <li><a href="/omwave_website/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="title-part">
+            <section class="conception-description">
                 <h1>
-                    OMWAVE - La Conception Française au service de l'Innovation
+                    La Conception Française au service de l'Innovation
                 </h1> 
                 <p>
                     Chez OMWAVE, nous comprenons que chaque projet est unique. C'est pourquoi nous offrons un service professionnel personnalisé pour répondre à vos besoins spécifiques.
                     Notre équipe travaille en étroite collaboration avec vous, en mettant l'accent sur l'écoute attentive et la compréhension approfondie de vos objectifs.
                     Nous nous engageons à faire de votre vision une réalité économique, en vous fournissant des solutions innovantes et sur mesure.
-                </p>
-                <img class="title-part" src="./asset/imgconception.png" alt="représentation de la conception">                             
+                </p>                      
             </section>
-            <section class="top-part">
+            <section class="professionnal-service">
                     <h2>
                         Professional Service : Votre succès est notre <strong>priorité</strong>
                     </h2>
@@ -125,4 +115,38 @@
                 &copy; - OMWAVE - De l'idée à la production en France. - <time datetime="2023-06-07">2023</time>
             </p>
         </footer>
+        <script>
+            // Sélection de l'élément avec la classe "arrow"
+            const arrowElement = document.querySelector('.arrow');
+          
+            // Sélection de la section avec la classe "hidden"
+            const hiddenSection = document.querySelector('.hidden');
+          
+            // Sélection de tous les liens dans la section
+            const links = hiddenSection.querySelectorAll('a');
+          
+            // Ajout d'un gestionnaire d'événements pour le clic sur l'élément "arrow"
+            arrowElement.addEventListener('click', function () {
+              // // Vérification de l'état actuel de la section "hidden"
+              // const isHidden = hiddenSection.style.display === 'none';
+  
+              // Obtenez le style calculé de l'élément
+              var computedStyle = window.getComputedStyle(hiddenSection);
+  
+              // Accédez à la valeur de la propriété "display"
+              var displayValue = computedStyle.getPropertyValue("display");
+              const isHidden = displayValue === 'none';
+          
+              // Modification de la propriété "display" de la section "hidden"
+              hiddenSection.style.display = isHidden ? 'block' : 'none';
+            });
+          
+            // Ajout d'un gestionnaire d'événements pour le clic sur les liens
+            links.forEach(function (link) {
+              link.addEventListener('click', function () {
+                // Masquer la section "hidden" lorsqu'un lien est cliqué
+                hiddenSection.style.display = 'none';
+              });
+            });
+          </script>  
     </body>
