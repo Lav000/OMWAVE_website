@@ -43,7 +43,6 @@ ul {
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 /* Set a more appropriate default for hr element */
@@ -85,6 +84,7 @@ a {
   text-decoration: none;
   opacity: 0;
   transition: opacity 0.3s;
+  font-size: 2vw;
 }
 
 .mission-detail:hover #scroll-to-top,
@@ -160,10 +160,16 @@ ul {
 
 
 /* SELECTION-PART */
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .selection-part {
   font-family: 'Martian Mono', monospace;
   display: flex;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 .selection-part {
