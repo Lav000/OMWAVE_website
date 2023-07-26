@@ -183,14 +183,15 @@ ul {
 }
 /* END CONCEPTION PART */
 
+
 /* PROFESSIONNAL SERVICE PART */
-
-
 /* CONTENT */
 .professionnal-service h2 {
-  font-family: 'Martian Mono', monospace;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   padding: 1vw;
-  font-size: 1.5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: clamp(20px, 2vw, 1000px);
 }
 
 .content {
@@ -208,6 +209,7 @@ ul {
 
 .content h3 {
   font-size: clamp(19px, 1.3vw, 1000px);
+  font-family: 'Martian Mono', monospace;
 }
 
 .content p {
@@ -220,8 +222,32 @@ ul {
   border-left: solid 2px #fff;
   border-right: solid 2px #fff;
 }
+
+/* OUTRO */
+.outro {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(20px, 1vw, 1000px);
+  text-align: justify;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  padding: 2vw 5vw 2vw 5vw;
+}
 /* END PROFESIONNAL SERVICE PART */
 
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #fff;
+  text-align: center;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  color: #fff;
+  font-size: 1rem;
+}
+/* END FOOTER */
 
 @media (max-width: 768px) {
   body {
